@@ -19,8 +19,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
 /*h2*/.title {
-    margin: 0 0 3em;
+    margin: 2em 0 4em;
     padding: 0 0.5em;
     text-align: center;
 }
@@ -28,6 +29,7 @@ body {
     display: block;
     font-size: 80%;
 }
+
 caption {
     font-style: italic;
 }
@@ -43,6 +45,7 @@ caption {
     /*h2*/.title {
         margin: 0 auto 1em;
         max-width: 600px;
+        padding: 0 0.5em;
         text-align: left;
     }
 
@@ -89,10 +92,9 @@ caption {
 @media(min-width: 800px) {
 
     body {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        display: block;
+        margin: 0 auto;
+        max-width: 600px;
     }
 
     #dot-plot-graph {
@@ -123,6 +125,11 @@ caption {
         text-align: center;
         width: 80px;
         z-index: 2;
+    }
+
+    #dot-plot-graph tbody {
+        display: block;
+        height: 340px;
     }
 
     #dot-plot-graph .section:after {
